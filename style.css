@@ -956,54 +956,72 @@ h5 {
 
 /* Home Page start */
 
-.content__header--primary {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+@media (min-width: 768px) {
+  main.post__content {
+    grid-column: span 2 / span 2;
+  }
 }
 
-.content__title {
-  margin-bottom: 1.5rem;
+.post__intro > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.post__intro_categories a {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(22 163 74 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
+}
+
+.post__intro_categories a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-weight: 500;
+  color: initial;
+}
+
+.post__intro_title {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
-  font-style: normal;
 }
 
 @media (min-width: 1024px) {
-  .content__title {
+  .post__intro_title {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
-.content__title {
-  font-family: 'Inter', serif;
+.post__intro_title {
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
-.content__paragraph,
-  .content__highlights-text {
+.post__intro > p {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 400;
-  font-style: normal;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
 .inter-head {
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
 .inter-para {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1068,10 +1086,10 @@ h5 {
   justify-content: space-between;
   border-radius: 0.5rem;
   border-width: 1px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   text-align: left;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -1155,7 +1173,7 @@ h5 {
   padding-bottom: 1rem;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1194,7 +1212,7 @@ h5 {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1245,7 +1263,7 @@ h5 {
   margin-bottom: 0.5rem;
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1256,7 +1274,7 @@ h5 {
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1461,7 +1479,7 @@ h5 {
   text-align: center;
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1480,7 +1498,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1510,7 +1528,7 @@ h5 {
   transition-duration: 150ms;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1550,7 +1568,7 @@ h5 {
   letter-spacing: 0.025em;
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1595,7 +1613,7 @@ h5 {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1613,7 +1631,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1624,7 +1642,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1834,7 +1852,7 @@ h5 {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -1856,7 +1874,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2050,7 +2068,7 @@ h5 {
   line-height: 1.75rem;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2068,7 +2086,7 @@ h5 {
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2078,7 +2096,7 @@ h5 {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2113,7 +2131,7 @@ h5 {
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2145,7 +2163,7 @@ h5 {
   color: rgb(22 163 74 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2159,7 +2177,7 @@ h5 {
 .updates-section__article-title {
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2170,7 +2188,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -2268,10 +2286,10 @@ h5 {
 .hero__content {
   position: relative;
   z-index: 10;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: left;
 }
 
@@ -2342,10 +2360,10 @@ h5 {
 /* Layout Block */
 
 .layout {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -2362,7 +2380,7 @@ h5 {
 }
 
 .layout__grid {
-  /* @apply grid grid-cols-1 xl:grid-cols-12 gap-8; */
+  /* @apply grid grid-cols-1 gap-8 xl:grid-cols-12; */
   display: flex;
   flex-direction: column;
 }
@@ -2424,10 +2442,10 @@ h5 {
 
 .report-card {
   border-radius: 1.5rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .report-card--container {
@@ -3155,8 +3173,8 @@ h5 {
 }
 
 .content__header {
-  margin-bottom: 3rem;
   margin-top: 0.75rem;
+  margin-bottom: 3rem;
 }
 
 .content__section > :not([hidden]) ~ :not([hidden]) {
@@ -3411,24 +3429,6 @@ h5 {
   }
 }
 
-.content__main {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  .content__main {
-    grid-column: span 2 / span 2;
-  }
-}
-
-@media (min-width: 1024px) {
-  .content__main {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 .content__section > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -3563,10 +3563,10 @@ h5 {
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(88 28 135 / var(--tw-text-opacity, 1));
@@ -4177,8 +4177,8 @@ h5 {
 }
 
 .subscription-section__description {
-  margin-bottom: 1.5rem;
   margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -4290,10 +4290,10 @@ h5 {
 .marketing-trends__content {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .marketing-trends__headline {
@@ -5167,7 +5167,7 @@ h5 {
   text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
 }
 
@@ -5186,7 +5186,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
 }
 
@@ -5216,7 +5216,7 @@ h5 {
   transition-duration: 150ms;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-optical-sizing: auto;
 }
 
@@ -5256,7 +5256,7 @@ h5 {
   letter-spacing: 0.025em;
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -5301,7 +5301,7 @@ h5 {
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   font-weight: 600;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -5319,7 +5319,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
@@ -5330,7 +5330,7 @@ h5 {
   color: rgb(75 85 99 / var(--tw-text-opacity, 1));
   font-weight: 400;
   font-style: normal;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-optical-sizing: auto;
 }
 
