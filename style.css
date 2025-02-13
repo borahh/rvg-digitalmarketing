@@ -978,20 +978,20 @@ h5 {
 
 @media (min-width: 1024px) {
   .page__layout {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
 .page__grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .page__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 
@@ -1004,7 +1004,11 @@ h5 {
 
 @media (min-width: 768px) {
   main.post__content {
-    grid-column: span 2 / span 2;
+    grid-column: span 8 / span 8;
+  }
+
+  aside.post__aside {
+    grid-column: span 4 / span 4;
   }
 }
 
@@ -1556,6 +1560,7 @@ h5 {
 .newsletter__footer {
   margin-top: 0.75rem;
   align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
 
@@ -1620,6 +1625,13 @@ h5 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(238 74 3 / var(--tw-ring-opacity, 1));
 }
+
+/** 
+    *
+    *   ======== Single Post - ENDS ======
+    *
+    *
+    **/
 
 /* Block: dropdown */
 
@@ -5089,6 +5101,10 @@ h5 {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline {
     display: inline;
   }
