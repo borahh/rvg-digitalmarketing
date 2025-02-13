@@ -978,6 +978,13 @@ h5 {
 
 @media (min-width: 1024px) {
   .page__layout {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page__layout {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -1002,11 +1009,25 @@ h5 {
     *
     **/
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+  main.post__content {
+    grid-column: span 7 / span 7;
+  }
+}
+
+@media (min-width: 1280px) {
   main.post__content {
     grid-column: span 8 / span 8;
   }
+}
 
+@media (min-width: 1024px) {
+  aside.post__aside {
+    grid-column: span 5 / span 5;
+  }
+}
+
+@media (min-width: 1280px) {
   aside.post__aside {
     grid-column: span 4 / span 4;
   }
@@ -1041,10 +1062,10 @@ h5 {
   font-weight: 600;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .post__intro_title {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1090,10 +1111,10 @@ h5 {
 .post__highlights_title {
   font-size: 1.875rem;
   line-height: 2.25rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .post__highlights_title {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1335,27 +1356,6 @@ h5 {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 228 226 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(238 74 3 / var(--tw-text-opacity, 1));
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-}
-
-.post__share__social-icons a:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.post__share__social-icons i {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 /* Post Categories Pills */
@@ -3825,7 +3825,6 @@ h5 {
 }
 
 .suggested-articles__image {
-  height: 8rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -5101,10 +5100,6 @@ h5 {
 }
 
 @media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
   .md\:inline {
     display: inline;
   }
@@ -5123,6 +5118,10 @@ h5 {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

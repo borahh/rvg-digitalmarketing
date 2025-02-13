@@ -45,7 +45,7 @@
   }
 
   .page__layout {
-    @apply px-4 py-6 mx-auto max-w-8xl sm:px-6 lg:px-20;
+    @apply px-4 py-6 mx-auto max-w-8xl sm:px-6 lg:px-12 xl:px-20;
   }
   .page__grid {
     @apply grid grid-cols-1 gap-10 lg:grid-cols-12;
@@ -59,10 +59,10 @@
     **/
 
   main.post__content {
-    @apply md:col-span-8;
+    @apply lg:col-span-7 xl:col-span-8;
   }
   aside.post__aside {
-    @apply md:col-span-4;
+    @apply lg:col-span-5 xl:col-span-4;
   }
 
   /* Post Intro */
@@ -79,7 +79,7 @@
   }
 
   .post__intro_title {
-    @apply text-3xl font-semibold lg:text-5xl;
+    @apply text-3xl font-semibold md:text-4xl;
     font-family: "Inter", serif;
     font-optical-sizing: auto;
   }
@@ -94,7 +94,7 @@
     @apply py-6 my-4 space-y-6 lg:my-6;
   }
   .post__highlights_title {
-    @apply text-3xl font-bold lg:text-4xl;
+    @apply text-3xl font-semibold md:text-4xl;
   }
   .post__highlights > ul {
     @apply pl-1 space-y-1 list-disc list-inside;
@@ -190,11 +190,7 @@
   }
 
   .post__share__social-icons a {
-    @apply flex items-center justify-center transition duration-300 rounded-full w-7 h-7 bg-neutral-card text-primary-base hover:bg-blue-500 hover:text-white;
-  }
-
-  .post__share__social-icons i {
-    @apply text-xs;
+    @apply flex items-center justify-center rounded-full w-7 h-7;
   }
 
   /* Post Categories Pills */
@@ -1139,7 +1135,7 @@
   }
 
   .suggested-articles__image {
-    @apply object-cover w-full h-32;
+    @apply object-cover w-full;
   }
 
   .suggested-articles__content {
