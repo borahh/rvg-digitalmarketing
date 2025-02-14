@@ -736,7 +736,7 @@ h5 {
 
 /** 
     *
-    *   ======== Single Post - STARTS ======
+    *   ======== Single Post & News - STARTS ======
     *
     *
     **/
@@ -781,6 +781,21 @@ h5 {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.post__intro_categories a {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(238 74 3 / var(--tw-text-opacity, 1));
+  text-decoration-line: none;
+}
+
+.post__intro_categories a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-weight: 500;
+  color: initial;
+}
+
 .post__intro_title {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -816,6 +831,59 @@ h5 {
 }
 
 /* Post Highlights */
+
+.post__highlights {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post__highlights > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.post__highlights {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .post__highlights {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.post__highlights_title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .post__highlights_title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.post__highlights > ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.post__highlights > ul > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.post__highlights > ul {
+  padding-left: 0.25rem;
+}
 
 /* Post Header */
 
@@ -884,6 +952,91 @@ h5 {
 }
 
 /* Post Author Meta */
+
+.post__author {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post__author > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.post__author {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .post__author {
+    margin-top: 2rem;
+  }
+}
+
+.post__author img {
+  height: 3rem;
+  width: 3rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+}
+
+@media (min-width: 768px) {
+  .post__author img {
+    height: 4rem;
+    width: 3.5rem;
+  }
+}
+
+.post__author_info > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
+.post__author_name {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .post__author_name {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.post__author_meta {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .post__author_meta {
+    flex-direction: row;
+  }
+}
+
+.post__author_meta {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+}
+
+.post__author_meta li:not(:last-child)::after {
+  content: "-";
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  font-weight: 500;
+  color: initial;
+}
 
 /* Post Featured Image */
 
@@ -1059,6 +1212,76 @@ h5 {
 
 /* Post Author Card */
 
+.post__author_card {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 247 247 / var(--tw-bg-opacity, 1));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .post__author_card {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .post__author_card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.post__author_card img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(238 74 3 / var(--tw-border-opacity, 1));
+}
+
+.post__author_card_info > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.post__author_card_info {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .post__author_card_info {
+    text-align: left;
+  }
+}
+
+.post__author_card_bio {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .post__author_card_bio {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 /* Newsletter */
 
 .newsletter__container {
@@ -1204,6 +1427,48 @@ h5 {
 
 /* Suggested Articles Section */
 
+.suggested-articles__container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.suggested-articles__title {
+  margin-bottom: 1.5rem;
+}
+
+.suggested-articles__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .suggested-articles__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.suggested-articles__item {
+  overflow: hidden;
+}
+
+.suggested-articles__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.suggested-articles__content {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.suggested-articles__headline {
+  margin-bottom: 0.5rem;
+}
+
 /* Subscription Section */
 
 .subscription-section__container {
@@ -1342,7 +1607,7 @@ h5 {
 
 /** 
     *
-    *   ======== Single Post - ENDS ======
+    *   ======== Single Post & News - ENDS ======
     *
     *
     **/
