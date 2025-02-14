@@ -51,6 +51,10 @@
     @apply grid grid-cols-1 gap-10 lg:grid-cols-12;
   }
 
+  /* Divider */
+  .content-divider {
+    @apply my-8 border-gray-300;
+  }
   /** 
     *
     *   ======== Single Post - STARTS ======
@@ -279,6 +283,87 @@
 
   .newsletter__button {
     @apply w-full px-6 py-2 text-sm font-medium text-white rounded-md bg-primary-base hover:bg-primary-hover focus:ring-4 focus:ring-primary-base;
+  }
+
+  /* Suggested Articles Section */
+  .suggested-articles__container {
+    @apply pt-4 mx-auto mt-6;
+  }
+
+  .suggested-articles__title {
+    @apply mb-6;
+  }
+
+  .suggested-articles__grid {
+    @apply grid grid-cols-1 gap-6 md:grid-cols-3;
+  }
+
+  .suggested-articles__item {
+    @apply overflow-hidden;
+  }
+
+  .suggested-articles__image {
+    @apply object-cover w-full;
+  }
+
+  .suggested-articles__content {
+    @apply py-4;
+  }
+
+  .suggested-articles__headline {
+    @apply mb-2;
+  }
+  /* Subscription Section */
+  .subscription-section {
+    @apply w-full;
+  }
+
+  .subscription-section__container {
+    @apply flex flex-col justify-center;
+  }
+
+  .subscription-section__card {
+    @apply bg-[#F5F7F7] rounded-2xl px-6 py-8 max-w-md w-full text-center mx-auto;
+  }
+
+  .subscription-section__title {
+    @apply mb-2;
+  }
+
+  .subscription-section__title-dark {
+    @apply text-primary-dark;
+  }
+
+  .subscription-section__title-highlight {
+    @apply -mx-2 text-primary-base;
+  }
+
+  .subscription-section__subtitle {
+    @apply mt-5 text-2xl font-semibold md:text-3xl text-primary-base;
+  }
+
+  .subscription-section__description {
+    @apply mt-3 mb-6 text-2xl font-bold text-primary-dark md:text-3xl;
+  }
+
+  .subscription-section__form {
+    @apply mx-5 space-y-10;
+  }
+
+  .subscription-section__input {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-base;
+  }
+
+  .subscription-section__button {
+    @apply w-2/3 py-2 font-bold text-white bg-primary-base hover:bg-primary-hover focus:ring-2 focus:ring-primary-base;
+  }
+
+  .subscription-section__disclaimer {
+    @apply mt-4 text-xs leading-loose text-gray-600 md:text-sm;
+  }
+
+  .subscription-section__link {
+    @apply underline text-primary-base;
   }
 
   /** 
@@ -1098,11 +1183,6 @@
     @apply lora-para;
   }
 
-  /* Divider */
-  .content-divider {
-    @apply my-8 border-gray-300;
-  }
-
   /* Caption */
   .content-caption {
     @apply text-sm text-gray-500 md:text-base lg:text-lg lora-para;
@@ -1115,87 +1195,6 @@
 
   .content-button {
     @apply px-3 py-1 text-sm bg-gray-200 rounded-full text-neutral-text md:text-base lg:text-lg md:px-4 hover:bg-gray-300 focus:outline-none focus:ring focus:ring-gray-400;
-  }
-
-  /* Suggested Articles Section */
-  .suggested-articles__container {
-    @apply pt-4 mx-auto mt-6;
-  }
-
-  .suggested-articles__title {
-    @apply mb-6;
-  }
-
-  .suggested-articles__grid {
-    @apply grid grid-cols-1 gap-6 md:grid-cols-3;
-  }
-
-  .suggested-articles__item {
-    @apply overflow-hidden;
-  }
-
-  .suggested-articles__image {
-    @apply object-cover w-full;
-  }
-
-  .suggested-articles__content {
-    @apply py-4;
-  }
-
-  .suggested-articles__headline {
-    @apply mb-2;
-  }
-  /* Subscription Section */
-  .subscription-section {
-    @apply w-full;
-  }
-
-  .subscription-section__container {
-    @apply flex flex-col justify-center;
-  }
-
-  .subscription-section__card {
-    @apply bg-[#F5F7F7] rounded-2xl px-6 py-8 max-w-md w-full text-center mx-auto;
-  }
-
-  .subscription-section__title {
-    @apply mb-2;
-  }
-
-  .subscription-section__title-dark {
-    @apply text-primary-dark;
-  }
-
-  .subscription-section__title-highlight {
-    @apply -mx-2 text-primary-base;
-  }
-
-  .subscription-section__subtitle {
-    @apply mt-5 text-2xl font-semibold md:text-3xl text-primary-base;
-  }
-
-  .subscription-section__description {
-    @apply mt-3 mb-6 text-2xl font-bold text-primary-dark md:text-3xl;
-  }
-
-  .subscription-section__form {
-    @apply mx-5 space-y-10;
-  }
-
-  .subscription-section__input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-base;
-  }
-
-  .subscription-section__button {
-    @apply w-2/3 py-2 font-bold text-white bg-primary-base hover:bg-primary-hover focus:ring-2 focus:ring-primary-base;
-  }
-
-  .subscription-section__disclaimer {
-    @apply mt-4 text-xs leading-loose text-gray-600 md:text-sm;
-  }
-
-  .subscription-section__link {
-    @apply underline text-primary-base;
   }
 
   /* Marketing Trends Section */
