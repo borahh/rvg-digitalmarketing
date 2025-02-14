@@ -717,6 +717,14 @@ h5 {
   }
 }
 
+.page__layout--post .page__grid main {
+  order: 2;
+}
+
+.page__layout--post .page__grid aside {
+  order: 1;
+}
+
 /* Divider */
 
 .content-divider {
@@ -754,6 +762,14 @@ h5 {
 @media (min-width: 1280px) {
   aside.post__aside {
     grid-column: span 4 / span 4;
+  }
+
+  .page__layout--post main.post__content {
+    grid-column: span 9 / span 9;
+  }
+
+  .page__layout--post aside.post__aside {
+    grid-column: span 3 / span 3;
   }
 }
 

@@ -61,6 +61,12 @@
   .page__grid {
     @apply grid grid-cols-1 gap-10 lg:grid-cols-12;
   }
+  .page__layout--post .page__grid main {
+    @apply order-2;
+  }
+  .page__layout--post .page__grid aside {
+    @apply order-1;
+  }
 
   /* Divider */
   .content-divider {
@@ -78,6 +84,13 @@
   }
   aside.post__aside {
     @apply lg:col-span-5 xl:col-span-4;
+  }
+
+  .page__layout--post main.post__content {
+    @apply xl:col-span-9;
+  }
+  .page__layout--post aside.post__aside {
+    @apply xl:col-span-3;
   }
 
   /* Post Intro */
