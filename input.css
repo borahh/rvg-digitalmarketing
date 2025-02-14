@@ -129,7 +129,7 @@
   }
 
   .post__header_meta {
-    @apply flex items-center gap-5;
+    @apply flex items-center gap-5 text-sm font-medium text-neutral-700;
   }
 
   .post__header_breadcrumb a:not(:last-child)::after {
@@ -140,7 +140,7 @@
     @apply font-medium transition-colors duration-300 hover:text-primary-base;
   }
   .post__header_meta_item {
-    @apply flex items-center gap-3;
+    @apply flex items-center gap-2;
   }
   .post__header_meta_item svg {
     @apply w-5 h-5 text-primary-base;
