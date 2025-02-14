@@ -13,13 +13,13 @@
     @apply text-4xl font-bold lg:text-5xl;
   }
   h2 {
-    @apply text-3xl font-bold lg:text-4xl;
+    @apply text-3xl font-semibold lg:text-4xl;
   }
   h3 {
-    @apply text-2xl font-bold lg:text-3xl;
+    @apply text-2xl font-semibold lg:text-3xl;
   }
   h4 {
-    @apply text-xl font-bold lg:text-2xl;
+    @apply text-xl font-semibold lg:text-2xl;
   }
 
   h5 {
@@ -88,9 +88,13 @@
     font-optical-sizing: auto;
   }
 
-  .post__intro > p,
+  .post__content article p,
   .post__highlights > ul > li {
     @apply text-lg font-normal text-neutral-subtext;
+  }
+
+  .post__content article p {
+    @apply leading-relaxed;
   }
 
   /* Post Highlights */
@@ -153,12 +157,8 @@
     @apply mt-8 mb-4 text-primary-main;
   }
 
-  .post__content article p {
-    @apply mb-6 text-base leading-relaxed text-neutral-placeholder;
-  }
-
   .post__content article ul {
-    @apply pl-6 space-y-2 list-disc text-neutral-placeholder;
+    @apply pl-6 space-y-1 list-disc text-neutral-placeholder;
   }
 
   .post__content article ul li {
