@@ -255,7 +255,7 @@
 
   /* Post Author Card */
   .post__author_card {
-    @apply bg-[#F5F7F7] px-6 py-8 lg:px-8 lg:py-12 rounded-3xl mt-10 flex flex-col items-center sm:flex-row gap-10;
+    @apply bg-[#c3c2c269] px-6 py-8 lg:px-8 lg:py-12 rounded-3xl mt-10 flex flex-col items-center sm:flex-row gap-10;
   }
   .post__author_card img {
     @apply w-24 h-24 border-2 rounded-full border-primary-base;
@@ -269,7 +269,7 @@
 
   /* Newsletter */
   .newsletter__container {
-    @apply bg-[#F5F7F7] p-12 rounded-3xl mx-auto mt-6;
+    @apply bg-[#c3c2c269] p-12 rounded-3xl mx-auto mt-6;
   }
 
   .newsletter__header {
@@ -370,7 +370,7 @@
   }
 
   .subscription-section__card {
-    @apply bg-[#F5F7F7] rounded-2xl px-6 py-8 max-w-md w-full text-center mx-auto;
+    @apply bg-[#c3c2c269] rounded-2xl px-6 py-8 max-w-md w-full text-center mx-auto;
   }
 
   .subscription-section__title {
@@ -943,7 +943,7 @@
 
   /* TOC card */
   .toc-card {
-    @apply py-5 bg-[#F5F7F7] text-primary-main rounded-3xl px-7;
+    @apply py-5 bg-[#c3c2c269] text-primary-main rounded-3xl px-7;
   }
 
   .toc-card__header {
