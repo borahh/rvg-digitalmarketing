@@ -94,7 +94,7 @@
   }
 
   .post__content article p {
-    @apply leading-relaxed;
+    @apply leading-7;
   }
 
   /* Post Highlights */
@@ -158,15 +158,11 @@
   }
 
   .post__content article ul {
-    @apply pl-6 space-y-1 list-disc text-neutral-placeholder;
+    @apply pl-1 space-y-1 list-disc list-inside;
   }
 
   .post__content article ul li {
-    @apply flex items-start;
-  }
-
-  .post__content article ul li::marker {
-    @apply text-primary-base;
+    @apply text-lg font-normal text-neutral-subtext;
   }
 
   .post__content article ul li b {
