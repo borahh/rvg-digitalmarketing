@@ -89,12 +89,13 @@
   }
 
   .post__content article p,
+  .post__intro p,
   .post__highlights > ul > li {
     @apply text-lg font-normal text-neutral-subtext;
   }
 
   .post__content article p {
-    @apply leading-7;
+    @apply my-4 leading-7;
   }
 
   /* Post Highlights */
@@ -105,7 +106,7 @@
     @apply text-3xl font-semibold md:text-4xl;
   }
   .post__highlights > ul {
-    @apply pl-1 space-y-1 list-disc list-inside;
+    @apply pl-1 my-2 space-y-1 list-disc list-inside;
   }
 
   /* Post Author Meta */
@@ -138,7 +139,7 @@
     @apply mt-6;
   }
   .post__featured_img img {
-    @apply w-full lg:rounded-lg;
+    @apply w-full rounded-lg;
   }
 
   /* Post Content */
@@ -158,7 +159,7 @@
   }
 
   .post__content article ul {
-    @apply pl-1 space-y-1 list-disc list-inside;
+    @apply pl-1 my-4 space-y-1 list-disc list-inside;
   }
 
   .post__content article ul li {
@@ -173,7 +174,7 @@
   }
 
   .post__content article img {
-    @apply w-full mt-8 rounded-lg;
+    @apply w-full my-4 mt-8 rounded-lg;
   }
 
   /* Post Share */
@@ -182,7 +183,7 @@
   }
 
   .post__share-text {
-    @apply text-sm text-neutral-placeholder;
+    @apply text-base;
   }
 
   .post__share__social-icons {
@@ -213,7 +214,7 @@
     @apply space-y-5 text-center sm:text-left;
   }
   .post__author_card_bio {
-    @apply text-sm font-thin text-neutral-subtext md:text-base;
+    @apply text-base font-normal text-neutral-subtext md:text-lg;
   }
 
   /* Newsletter */
@@ -347,7 +348,7 @@
   }
 
   .subscription-section__input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-base;
+    @apply w-full px-4 py-2 text-left border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-base;
   }
 
   .subscription-section__button {
