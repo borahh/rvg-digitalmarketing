@@ -47,6 +47,17 @@
   .page__layout {
     @apply px-4 py-6 mx-auto max-w-8xl sm:px-6 lg:px-12 xl:px-20;
   }
+  .page__layout--post {
+    @apply space-y-10;
+  }
+  .page__layout--post .post__featured_img {
+    @apply aspect-[16/10] lg:aspect-[1685/517];
+  }
+
+  .page__layout--post .post__featured_img img {
+    @apply block object-cover w-full h-full;
+  }
+
   .page__grid {
     @apply grid grid-cols-1 gap-10 lg:grid-cols-12;
   }
