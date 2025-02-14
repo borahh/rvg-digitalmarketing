@@ -943,7 +943,7 @@
 
   /* TOC card */
   .toc-card {
-    @apply py-5 bg-neutral-card text-primary-main rounded-3xl px-7;
+    @apply py-5 bg-[#F5F7F7] text-primary-main rounded-3xl px-7;
   }
 
   .toc-card__header {
